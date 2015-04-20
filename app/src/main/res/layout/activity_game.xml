@@ -1,0 +1,109 @@
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/gameFrameLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dreamempire.goldclicker.GameActivity"
+        android:id="@+id/gameLayout"
+        android:background="@drawable/bg_mine2">
+
+        <ImageView
+            android:id="@+id/imageCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageHlCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/above_coin_counter"
+            android:id="@+id/textScore"
+            android:textSize="45sp"
+            android:textColor="#ffedffb8"
+            android:shadowColor="#000000"
+            android:shadowRadius="5"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/gameScore"
+            android:textSize="32sp"
+            android:textColor="#ffedffb8"
+            android:shadowColor="#000000"
+            android:shadowRadius="5"
+            android:layout_below="@+id/textScore"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textAddCoins"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffcc"
+            android:shadowColor="#000000"
+            android:shadowRadius="10"
+            android:layout_below="@+id/textScore"
+            android:layout_toRightOf="@+id/gameScore"
+            android:layout_toEndOf="@+id/gameScore"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/shopButton"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:alpha="0.8"
+            android:id="@+id/buttonShop"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="#ffcccccc"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="5" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pickaxeLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/pickaxe1Layout">
+            <ImageView
+                android:id="@+id/pickaxe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/pickaxe2Layout">
+            <ImageView
+                android:id="@+id/pickaxe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

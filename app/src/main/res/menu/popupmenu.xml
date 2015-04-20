@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/shopFinger"
+            android:title="Bank\n+1 coin each second" />
+        <item
+            android:id="@+id/shopBank"
+            android:title="Bank\n+50 coins each second" />
+        <item
+            android:id="@+id/shopMine"
+            android:title="Bank\n+100 coins each second" />
+    </group>
+
+</menu>
